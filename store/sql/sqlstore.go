@@ -31,6 +31,11 @@ type sqlStoreFactory struct {
 	settings *quickfix.Settings
 }
 
+func (f sqlStoreFactory) GetStore() quickfix.MessageStore {
+	//TODO implement me
+	panic("implement me")
+}
+
 type sqlStore struct {
 	sessionID          quickfix.SessionID
 	cache              quickfix.MessageStore

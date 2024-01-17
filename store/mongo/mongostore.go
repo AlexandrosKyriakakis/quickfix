@@ -35,6 +35,11 @@ type mongoStoreFactory struct {
 	sessionsCollection string
 }
 
+func (f mongoStoreFactory) GetStore() quickfix.MessageStore {
+	//TODO implement me
+	panic("implement me")
+}
+
 type mongoStore struct {
 	sessionID          quickfix.SessionID
 	cache              quickfix.MessageStore
